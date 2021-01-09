@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RegistrationController {
 
-    @GetMapping("test")
+    @GetMapping("/")
     public String test(){
         return "This is registration service";
     }
