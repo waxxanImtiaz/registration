@@ -1,9 +1,11 @@
-pipeline{
-    node any
+pipeline {
+   agent any
 
-    stages(){
-        stage('Build'){
-            echo 'Hello world'
-        }
-    }
+   stages {
+      stage('Hello') {
+         steps {
+            echo 'Hello World'
+         }
+      }
+   }
 }
