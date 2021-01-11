@@ -2,9 +2,9 @@ pipeline {
    agent any
 
    stages {
-      stage('Hello') {
+      stage('Test Build') {
          steps {
-            echo 'This is from repo'
+            bat 'move target\registration-0.0.1-SNAPSHOT.war D:\my-money\TOOLS\jboss-eap-6.1\standalone\deployments'
          }
       }
    }
